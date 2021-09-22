@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import HomePage from './Pages/Home/HomePage'
+import { Route, Switch } from 'react-router-dom'
+import SignInPage from './Pages/AccountPages/SignInPage'
+import ServicePage from './Pages/ServicePage/ServicePage'
+import Navbar from './Components/Navbar'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import SignUpPage from './Pages/AccountPages/SignUpPage'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Header />
+      <ServicePage />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
